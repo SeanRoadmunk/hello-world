@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('checkout') {
-            git branch: 'initial_branch', url: "https://github.com/SeanRoadmunk/hello-world.git"
+            steps {
+                git branch: 'initial_branch', url: "https://github.com/SeanRoadmunk/hello-world.git"
+            }
         }
         stage('run') {
             steps {
