@@ -10,7 +10,7 @@ pipeline {
                 sh (
                     script: '''
                         bash hello.sh
-                    '''
+                    ''',
                     returnStdout: true
                 )
             }
