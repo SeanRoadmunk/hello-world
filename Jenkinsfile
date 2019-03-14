@@ -9,12 +9,7 @@ pipeline {
         } */
         stage('run') {
             steps {
-                sh (
-                    script: '''
-                        echo "testing 1 2 3"
-                    ''',
-                    returnStdout: true
-                )
+                sh "hello.sh"
             }
         }
     }
