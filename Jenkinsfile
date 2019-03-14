@@ -9,13 +9,8 @@ pipeline {
         } */
         stage('run') {
             steps {
-                sh (
-                    script: '''
-                        chmod a+x hello.sh
-                        ./hello.sh
-                    ''',
-                    returnStdout: true
-                )
+                sh "chmod a+x hello.sh"
+                sh "./hello.sh"
             }
         }
     }
