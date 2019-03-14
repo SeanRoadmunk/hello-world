@@ -9,7 +9,13 @@ pipeline {
         } */
         stage('run') {
             steps {
-                sh "./hello.sh"
+                sh (
+                    script: '''
+                        chmod a+x hello.sh
+                        ./hello.sh
+                    ''',
+                    returnStdout: true
+                )
             }
         }
     }
