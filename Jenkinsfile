@@ -9,7 +9,7 @@ pipeline {
         } */
         stage('run') {
             steps {
-                sh "hello.sh"
+                sh "./hello.sh"
             }
         }
     }
