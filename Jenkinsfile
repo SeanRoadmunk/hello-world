@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh (
                     script: '''
-                        bash hello.sh
+                        /bin/bash hello.sh
                     ''',
                     returnStdout: true
                 )
