@@ -16,7 +16,7 @@ pipeline {
                         /bin/bash hello.sh
                     ''',
                     returnStdout: true
-                ).trim()
+                )
             }
         }
     }
