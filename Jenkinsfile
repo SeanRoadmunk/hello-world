@@ -11,6 +11,8 @@ pipeline {
             steps {
                 sh (
                     script: '''
+                        chmod u+x hello.sh
+                        ls -l
                         /bin/bash hello.sh
                     ''',
                     returnStdout: true
